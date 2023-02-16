@@ -1,0 +1,96 @@
+.flights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  margin: auto;
+}
+
+.flight {
+  background-color: rgb(233, 230, 230);
+  padding: 40px;
+  border-radius: 15px;
+  margin: 15px auto;
+  box-shadow: 0px 0px 5px rgb(197, 195, 195) inset;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title span {
+  color: rgb(34, 59, 217);
+}
+
+.travel {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.city {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.city span {
+  color: rgb(220, 19, 19);
+  font-size: 13px;
+}
+
+.travel p {
+  font-size: 14px;
+}
+
+.travel span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(34, 59, 217, 0.8);
+  cursor: pointer;
+  transition: 300ms;
+  color: #fff;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.button:hover {
+  background: rgb(34, 59, 217, 0.8);
+}
+
+.total {
+  color: rgb(7, 131, 7);
+}
+
+@media (max-width: 800px) {
+  .flights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .flights {
+    grid-template-columns: 1fr;
+  }
+
+  .flight {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}

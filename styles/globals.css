@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  background-color: rgb(5, 5, 55);
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+}
